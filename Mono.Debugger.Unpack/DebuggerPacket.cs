@@ -24,7 +24,7 @@ namespace Mono.Debugger.Unpack
         public List<DebuggerPacketParam> PacketParams { get; private set; } = new List<DebuggerPacketParam>();
 
 
-        public DebuggerPacket ConvertFrom(byte[] buffer, int bufferSize)
+        public static DebuggerPacket ConvertFrom(byte[] buffer, int bufferSize)
         {
             if(bufferSize < 11) throw new Exception("Invalid buffer size");
             

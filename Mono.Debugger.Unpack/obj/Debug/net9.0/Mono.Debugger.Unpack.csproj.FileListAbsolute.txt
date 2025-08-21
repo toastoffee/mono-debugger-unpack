@@ -1,0 +1,12 @@
+E:\repos\mono-debugger-unpack\Mono.Debugger.Unpack\bin\Debug\net9.0\Mono.Debugger.Unpack.deps.json
+E:\repos\mono-debugger-unpack\Mono.Debugger.Unpack\bin\Debug\net9.0\Mono.Debugger.Unpack.dll
+E:\repos\mono-debugger-unpack\Mono.Debugger.Unpack\bin\Debug\net9.0\Mono.Debugger.Unpack.pdb
+E:\repos\mono-debugger-unpack\Mono.Debugger.Unpack\obj\Debug\net9.0\Mono.Debugger.Unpack.GeneratedMSBuildEditorConfig.editorconfig
+E:\repos\mono-debugger-unpack\Mono.Debugger.Unpack\obj\Debug\net9.0\Mono.Debugger.Unpack.AssemblyInfoInputs.cache
+E:\repos\mono-debugger-unpack\Mono.Debugger.Unpack\obj\Debug\net9.0\Mono.Debugger.Unpack.AssemblyInfo.cs
+E:\repos\mono-debugger-unpack\Mono.Debugger.Unpack\obj\Debug\net9.0\Mono.Debugger.Unpack.csproj.CoreCompileInputs.cache
+E:\repos\mono-debugger-unpack\Mono.Debugger.Unpack\obj\Debug\net9.0\Mono.Debugger.Unpack.sourcelink.json
+E:\repos\mono-debugger-unpack\Mono.Debugger.Unpack\obj\Debug\net9.0\Mono.Debugger.Unpack.dll
+E:\repos\mono-debugger-unpack\Mono.Debugger.Unpack\obj\Debug\net9.0\refint\Mono.Debugger.Unpack.dll
+E:\repos\mono-debugger-unpack\Mono.Debugger.Unpack\obj\Debug\net9.0\Mono.Debugger.Unpack.pdb
+E:\repos\mono-debugger-unpack\Mono.Debugger.Unpack\obj\Debug\net9.0\ref\Mono.Debugger.Unpack.dll

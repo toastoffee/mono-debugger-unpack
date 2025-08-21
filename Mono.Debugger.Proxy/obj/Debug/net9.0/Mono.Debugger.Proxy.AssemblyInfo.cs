@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Mono.Debugger.Unpack")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Mono.Debugger.Proxy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dba59d0d5ff73d53249a2fa6fe8bae6d41842dd4")]
-[assembly: System.Reflection.AssemblyProductAttribute("Mono.Debugger.Unpack")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Mono.Debugger.Unpack")]
+[assembly: System.Reflection.AssemblyProductAttribute("Mono.Debugger.Proxy")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Mono.Debugger.Proxy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // 由 MSBuild WriteCodeFragment 类生成。

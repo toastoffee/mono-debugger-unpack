@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Mono.Debugger.Proxy/1.0.0": {
+        "dependencies": {
+          "Mono.Debugger.Unpack": "1.0.0"
+        },
+        "runtime": {
+          "Mono.Debugger.Proxy.dll": {}
+        }
+      },
+      "Mono.Debugger.Unpack/1.0.0": {
+        "runtime": {
+          "Mono.Debugger.Unpack.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Mono.Debugger.Proxy/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mono.Debugger.Unpack/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
