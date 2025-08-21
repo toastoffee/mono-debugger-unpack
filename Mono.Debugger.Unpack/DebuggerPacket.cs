@@ -2,7 +2,6 @@
 namespace Mono.Debugger.Unpack
 {
     using System.Text;
-    using System.Collections;
     
     public enum DebuggerPacketType
     {
@@ -57,9 +56,38 @@ namespace Mono.Debugger.Unpack
             {
                 packet.ErrCode = (ErrorCode) deserializer.ReadUInt16();
             }
-
+            
+            PacketParamsHandler packetParamsHandler;
 
             return packet;
+        }
+
+
+        public void LogPacket()
+        {
+            if (PacketType == DebuggerPacketType.HandShake)
+            {
+                Console.WriteLine($"[{PacketType.ToString()}]");
+            }
+            else
+            {
+
+                if (PacketType == DebuggerPacketType.Command)
+                {
+                    Console.WriteLine($"[{PacketType.ToString()}] [Length]{Length} [id]{Id} [CommandSet]{CmdSet.ToString()} [CommandId]{Cmd}");
+                }
+                else
+                {
+                    Console.WriteLine($"[{PacketType.ToString()}] [Length]{Length} [id]{Id} [ErrorCode]{ErrCode.ToString()}");
+                }
+            }
+
+
+            for (int i = 0; i < PacketParams.Count; i++)
+            {
+                Console.Write($"[param_{i+1}]");
+                PacketParams[i].LogParam();
+            }
         }
     }    
 }

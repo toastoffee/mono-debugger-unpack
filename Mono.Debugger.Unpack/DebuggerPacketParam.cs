@@ -1,4 +1,6 @@
-﻿namespace Mono.Debugger.Unpack
+﻿using System.Diagnostics;
+
+namespace Mono.Debugger.Unpack
 {
     public enum DebuggerPacketParamType
     {
@@ -19,7 +21,7 @@
         
         public T GetValue<T>() => Value is T t ? t : throw new InvalidCastException();
 
-        private static DebuggerPacketParam MakeValue(Object value, DebuggerPacketParamType type)
+        public static DebuggerPacketParam MakeValue(Object value, DebuggerPacketParamType type)
         {
             DebuggerPacketParam param = new DebuggerPacketParam();
             
@@ -28,15 +30,34 @@
 
             return param;
         }
-        
-        public static DebuggerPacketParam MakeString(String value)
-        {
-            return MakeValue(value, DebuggerPacketParamType.String);
-        }
 
-        public static DebuggerPacketParam MakeByte(byte value)
+        public void LogParam()
         {
-            return MakeValue(value, DebuggerPacketParamType.Byte);
+            switch (Type)
+            {
+                case DebuggerPacketParamType.Byte:
+                    Console.Write($"[{Type.ToString()}] {(byte)Value}");
+                    break;
+                case DebuggerPacketParamType.UInt16:
+                    Console.Write($"[{Type.ToString()}] {(UInt16)Value}");
+                    break;
+                case DebuggerPacketParamType.UInt32:
+                    Console.Write($"[{Type.ToString()}] {(UInt32)Value}");
+                    break;
+                case DebuggerPacketParamType.UInt64:
+                    Console.Write($"[{Type.ToString()}] {(UInt64)Value}");
+                    break;
+                case DebuggerPacketParamType.String:
+                    Console.Write($"[{Type.ToString()}] {(String)Value}");
+                    break;
+                case DebuggerPacketParamType.Variant:
+                    Console.Write($"[{Type.ToString()}] {(byte)Value}");
+                    break;
+                case DebuggerPacketParamType.Boolean:
+                    Console.Write($"[{Type.ToString()}] {(Boolean)Value}");
+                    break;
+            }
         }
+        
     }   
 }
