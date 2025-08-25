@@ -1,0 +1,23 @@
+﻿namespace Mono.Debugger.Unpack
+{
+    public enum EventKind
+    {
+        EVENT_KIND_VM_START = 0,
+        EVENT_KIND_VM_DEATH = 1,
+        EVENT_KIND_THREAD_START = 2,
+        EVENT_KIND_THREAD_DEATH = 3,
+        EVENT_KIND_APPDOMAIN_CREATE = 4,
+        EVENT_KIND_APPDOMAIN_UNLOAD = 5,
+        EVENT_KIND_METHOD_ENTRY = 6,
+        EVENT_KIND_METHOD_EXIT = 7,
+        EVENT_KIND_ASSEMBLY_LOAD = 8,
+        EVENT_KIND_ASSEMBLY_UNLOAD = 9,
+        EVENT_KIND_BREAKPOINT = 10,
+        EVENT_KIND_STEP = 11,
+        EVENT_KIND_TYPE_LOAD = 12,
+        EVENT_KIND_EXCEPTION = 13,
+        EVENT_KIND_KEEPALIVE = 14,
+        EVENT_KIND_USER_BREAK = 15,
+        EVENT_KIND_USER_LOG = 16
+    }    
+}

@@ -57,7 +57,14 @@ namespace Mono.Debugger.Unpack
                 packet.ErrCode = (ErrorCode) deserializer.ReadUInt16();
             }
             
-            PacketParamsHandler packetParamsHandler;
+            PacketParamsHandler? packetParamsHandler;
+
+            packetParamsHandler = DebuggerPacketParamsHandlerGetter.GetPacketParamsHandler(packet.CmdSet, packet.Cmd, packet.PacketType);
+
+            if (packetParamsHandler != null)
+            {
+                packetParamsHandler.Invoke(deserializer, packet);
+            }
 
             return packet;
         }
@@ -85,9 +92,11 @@ namespace Mono.Debugger.Unpack
 
             for (int i = 0; i < PacketParams.Count; i++)
             {
-                Console.Write($"[param_{i+1}]");
+                Console.Write($"[param_{i+1}] ");
                 PacketParams[i].LogParam();
+                Console.Write($"\n");
             }
+            Console.Write("\n");
         }
     }    
 }
